@@ -4,9 +4,12 @@
     box-sizing: border-box;
 }
 
-body {
+body,
+#root {
     color: #FFF;
     background: #EBF2F5;
+    width: 100vw;
+    height: 100vh;
 }
 
 body, input, button, textarea {
