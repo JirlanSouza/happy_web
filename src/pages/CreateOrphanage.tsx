@@ -46,8 +46,6 @@ export default function CreateOrphanage() {
         });
 
         setPreviewImages(selectedImagesPreview)
-
-        console.log(previewImages)
     }
 
     async function  handleSubmint(event: FormEvent) {

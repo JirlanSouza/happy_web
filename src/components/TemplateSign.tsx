@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react';
 import { FiArrowLeft } from 'react-icons/fi';
+import { useHistory } from 'react-router-dom';
 
 import logoVertical from '../images/logoVertical.svg';
 import '../styles/components/templateSign.css';
@@ -10,6 +11,8 @@ interface Props {
 }
 
 export default function TemplateSign(props: Props) {
+    const { goBack } = useHistory();
+    
     return (
         <div id="sign">
             <div className="content-wrapper">
@@ -25,7 +28,7 @@ export default function TemplateSign(props: Props) {
                 <div className="container-form">
                     <div className="content-form">
                         { props.goBack && (
-                            <button type="button" className="goBack">
+                            <button type="button" className="goBack" onClick={ goBack }>
                                 < FiArrowLeft size={24} color="#15C3D6"/>
                             </button>
                         )}

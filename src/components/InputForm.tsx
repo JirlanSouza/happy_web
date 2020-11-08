@@ -1,5 +1,5 @@
 import React from 'react';
-import { FiActivity, FiEye, FiLifeBuoy } from 'react-icons/fi';
+import { FiEye } from 'react-icons/fi';
 
 import '../styles/components/inputForm.css';
 
@@ -8,6 +8,7 @@ interface Props {
     type: string;
     typeViewPassword?: boolean;
     value: string;
+    isFilled?: boolean;
     handleOnChanged: any;
     handleViewPassword?: any;
     handleNotViewPassword?: any;
@@ -21,6 +22,7 @@ export default function InputText(props: Props) {
                 type={ props.type }
                 value={ props.value }
                 onChange={ event => props.handleOnChanged(event.target.value) }
+                style={ props.isFilled ? { border: "1px solid #A1E9C5" } : {} }
             />
 
             { props.typeViewPassword && (

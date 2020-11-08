@@ -1,0 +1,13 @@
+.dashboard-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.dashboard-container .dashboard-content {
+    position: absolute;
+    right: 0;
+
+    width: calc(100% - 96px);
+    height: 100%;
+}

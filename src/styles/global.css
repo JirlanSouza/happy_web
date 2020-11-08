@@ -10,8 +10,10 @@ body,
     background: #EBF2F5;
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 body, input, button, textarea {
     font: 600 18px Nunito, sans-Serif;
+    outline: none;
 }

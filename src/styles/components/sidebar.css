@@ -1,40 +1,53 @@
 aside.app-sidebar {
     position: fixed;
+    width: auto;
     height: 100%;
     padding: 32px 24px;
     background: linear-gradient(329.54deg, #15B6D6 0%, #15D6D6 100%);
-  
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-  }
-  
+}
+
 aside.app-sidebar img {
     width: 48px;
-  }
-  
-aside.app-sidebar footer a,
-aside.app-sidebar footer button {
+}
+
+aside.app-sidebar .body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+aside.app-sidebar aside.app-sidebar a,
+aside.app-sidebar button {
     width: 48px;
     height: 48px;
-  
+
     border: 0;
-  
-    background: #12AFCB;
     border-radius: 16px;
-  
+    background: #12AFCB;
     cursor: pointer;
-  
-    transition: background-color 0.2s;
+
+    transition: background-color .2s;
     outline: none;
-  
+
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-aside.app-sidebar footer a:hover,
-aside.app-sidebar footer button:hover {
+}
+
+aside.app-sidebar a:hover,
+aside.app-sidebar button:hover {
     background: #17D6EB;
-  }
+}
+
+aside.app-sidebar .body button.active {
+    background: #FFD666;
+}
+
+aside.app-sidebar button+button {
+    margin-top: 16px;
+}

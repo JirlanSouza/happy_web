@@ -1,5 +1,19 @@
 .component.input-block {
     position: relative;
+    transition: all .2s;
+}
+
+.messageWarning,
+.errorWarning {
+    margin-bottom: 24px;
+}
+
+.messageWarning strong{
+    color: #37C77F;
+}
+
+.errorWarning strong {
+    color: #F21;
 }
 
 .component.input-block + .input-block {

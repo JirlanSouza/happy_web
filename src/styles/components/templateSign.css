@@ -115,3 +115,11 @@
 
     margin-bottom: 64px;
 }
+
+#sign .container-form form .explanation {
+    font-size: 18px;
+    font-weight: 700;
+    color: #5C8599;
+
+    margin-bottom: 64px;
+}
