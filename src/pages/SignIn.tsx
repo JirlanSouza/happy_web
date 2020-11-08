@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { useHistory } from 'react-router-dom';
 import TemplateSign from '../components/TemplateSign';
 import InputForm from '../components/InputForm';
 import RemenberAndFogotLink from '../components/RemenberAndFogotLink';
@@ -9,8 +8,7 @@ import isValidEmail from '../utils/IsvalidEmail';
 import useAuth from '../contexts/auth';
 
 export default function SignIn() {
-    const history = useHistory();
-    const { signed, signIn }= useAuth();
+    const { signIn }= useAuth();
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");

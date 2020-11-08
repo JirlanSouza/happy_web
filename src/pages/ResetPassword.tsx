@@ -13,7 +13,7 @@ interface resetPasswordParams {
 export default function ResetPassword() {
     const params = useParams<resetPasswordParams>()
     const history = useHistory();
-    const { signed, resetPassword }= useAuth();
+    const { resetPassword }= useAuth();
 
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
