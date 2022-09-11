@@ -1,4 +1,4 @@
-# ![Happy](src/images/logo.svg)
+# ![Happy](src/images/logo.svg?raw=true)
 
 Web application to view orphanage's address, days, and hours that are open to visit.
 
@@ -12,7 +12,7 @@ Web application to view orphanage's address, days, and hours that are open to vi
 
 #### Landing
 
-![Landing](screenshots/landing.png)
+![Landing](screenshots/landing.png?raw=true)
 
 #### Home
 
@@ -20,7 +20,7 @@ Web application to view orphanage's address, days, and hours that are open to vi
 
 #### Add orphanage
 
-![Add orphanage](screenshots/addOrphanage.png)
+![Add orphanage](screenshots/addOrphanage.png?raw=true)
 
 ## Run application
 
