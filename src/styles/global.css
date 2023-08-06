@@ -12,6 +12,10 @@ body,
     height: 100vh;
 }
 
-body, input, button, textarea {
+body,
+input,
+button,
+textarea {
     font: 600 18px Nunito, sans-Serif;
+    overflow-x: hidden;
 }
