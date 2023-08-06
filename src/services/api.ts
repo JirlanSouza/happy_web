@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: "https://happy-backend-3c6ab.rj.r.appspot.com/",
+    baseURL: process.env.REACT_APP_API_BASE_URL,
 });
 
 export default api;
